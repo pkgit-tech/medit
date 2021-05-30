@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../globals.dart';
 import '../mycolors.dart';
-import './otherview.dart';
+import './popularview.dart';
 
 class HomeView extends StatefulWidget {
   @override
@@ -243,7 +243,7 @@ class _HomeViewState extends State<HomeView> {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (BuildContext context) => OtherView()));
+                    builder: (BuildContext context) => PopularView()));
           },
           child: Text(
             "See All",
