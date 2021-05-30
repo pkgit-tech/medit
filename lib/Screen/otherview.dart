@@ -34,10 +34,7 @@ class _OtherViewState extends State<OtherView> {
           ),
           centerTitle: true,
           elevation: 0,
-          leading: new IconButton(
-            onPressed: () => Navigator.of(context).pop(null),
-            icon: new Icon(Icons.arrow_back_ios, color: Colors.black),
-          ),
+         leading: new Container(),
         ),
         body: FutureBuilder<QuerySnapshot>(
             // <2> Pass `Future<QuerySnapshot>` to future
@@ -229,25 +226,5 @@ class _OtherViewState extends State<OtherView> {
     );
   }
 
-  // Future<void> fetchAndSetList() async {
-  //   await Firestore.instance
-  //       .collection("medi")
-  //       .getDocuments()
-  //       .then((QuerySnapshot snapshot) => snapshot.documents.forEach((f) => {
-  //             //     itemList = [];
-  //             f.data['items'].forEach((i) => print(i.title))
-  //             //         itemList.add(RestaurantitemList(
-  //             //             id: i.id,
-  //             //             title: i.title,
-  //             //             imageUrl i.imageUrl
-  //             //             // you might need to add all fields here, even if they are null
 
-  //             //     loadedList.add(RestaurantFoodList(
-  //             //         id: f.data['id'],
-  //             //         imageUrl: f.data['imageUrl'],
-  //             //         title: f.data['title'],
-  //             //         items: itemList
-  //             //     ))
-  //           }));
-  // }
 }
